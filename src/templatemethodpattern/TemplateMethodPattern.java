@@ -6,6 +6,14 @@ import java.io.InputStreamReader;
 
 /*
  * 模版方法模式
+ *
+ * 在一个方法中定义一个算法的骨架，将一些步骤延迟到子类中；
+ * 模版方法模式可以在不改变算法结构的情况下，重新定义算法中的某些步骤。
+ *
+ * 注意：策略模式和模版方法模式有点相似，区别在于：
+ * 策略模式和模版方法模式都封装算法，但策略使用组合，模版方法使用继承
+ * 工厂方法是模版方法的一个特殊版本
+ *
  * */
 public class TemplateMethodPattern {
     static class Coffee extends CaffeineBeverageWithHook {
