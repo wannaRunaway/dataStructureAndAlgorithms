@@ -2,7 +2,7 @@ package iteratorsandcombination;
 
 import java.util.Iterator;
 
-public class DinerMenu implements Menu{
+public class DinerMenu{
     static final int MAX_ITEMS = 4;
     int numberOfItems = 0;
     MenuItem[] menuItems;

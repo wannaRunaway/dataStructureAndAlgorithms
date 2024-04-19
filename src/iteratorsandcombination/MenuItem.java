@@ -1,6 +1,8 @@
 package iteratorsandcombination;
 
-public class MenuItem {
+import java.util.Iterator;
+
+public class MenuItem extends MenuComponent{
     String name;
     String description;
     boolean vegetarian;
@@ -28,5 +30,19 @@ public class MenuItem {
 
     public double getPrice() {
         return price;
+    }
+
+    @Override
+    public void print() {
+        System.out.println("  "+getName());
+        if (isVegetarian()) {
+            System.out.println("(v)");
+        }
+        System.out.println(", "+getPrice());
+        System.out.println("    --- "+getDescription());
+    }
+
+    public Iterator createIterator() {
+        return new NullIterator();
     }
 }

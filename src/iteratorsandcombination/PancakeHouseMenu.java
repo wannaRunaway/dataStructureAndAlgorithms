@@ -6,7 +6,7 @@ import java.util.Iterator;
 /*
  * 使用arraylist存储menu
  * */
-public class PancakeHouseMenu implements Menu{
+public class PancakeHouseMenu{
     ArrayList menuItems;
 
     public PancakeHouseMenu() {
@@ -39,10 +39,10 @@ public class PancakeHouseMenu implements Menu{
         menuItems.add(menuItem);
     }
 
-    @Override
-    public Iterator createIterator() {
-        return menuItems.iterator();
-    }
+//    @Override
+//    public Iterator createIterator() {
+//        return menuItems.iterator();
+//    }
 
 //    public ArrayList getMenuItems() {
 //        return menuItems;
