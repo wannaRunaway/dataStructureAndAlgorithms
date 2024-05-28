@@ -1,5 +1,9 @@
 package proxypattern.reflectproxy;
 
+/**
+ * 顾客不可以改变自己的hotorNot评分
+ * 也不可以改变其他人的信息
+ * */
 public class PersonBeanImpl implements PersonBean{
     String name, gender, interests;
     int rating, ratingCount = 0;
